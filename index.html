@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazifi Adam - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">NaziFolio</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Dropdown 1</a></li>
+                            <li class="deep-dropdown">
+                                <a href="#">Deep Dropdown <i class="fas fa-chevron-right"></i></a>
+                                <ul class="deep-dropdown-menu">
+                                    <li><a href="#">Deep Dropdown 1</a></li>
+                                    <li><a href="#">Deep Dropdown 2</a></li>
+                                    <li><a href="#">Deep Dropdown 3</a></li>
+                                    <li><a href="#">Deep Dropdown 4</a></li>
+                                    <li><a href="#">Deep Dropdown 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dropdown 2</a></li>
+                            <li><a href="#">Dropdown 3</a></li>
+                            <li><a href="#">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Dark Mode Toggle Button -->
+<button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+    <span class="toggle-icon">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </span>
+</button>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <h1>Nazifi Adam</h1>
+            <p>I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+            <p class="hero-description">Disciplined and results-driven professional specializing in Occupational Health & Safety, cybersecurity, Digital Skills, Financial Literacy Trainer and Mentor. Passionate about developing capacity-building programs that align with security, safety, and sustainable development goals.</p>
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About</h2>
+                <p>Get to Know Me</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="profile2.jpg" alt="Nazifi Adam">
+                </div>
+                <div class="about-info">
+                    <h3>Nazifi Adam</h3>
+                    <p class="about-role">Instructor, Mentor & Trainer</p>
+                    <p class="about-quote">Passionate About Building and Impacting Digital Skills to Individuals, Community and Organizations.</p>
+                    <div class="about-details">
+                        <p><i class="fas fa-envelope"></i> nazifiadam01@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +234 816 445 4174</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Jos, Plateau State, Nigeria.</p>
+                    </div>
+                    <p class="about-description">I am a certified professional in Health & Safety (OSHA UK) and Cybersecurity, with a proven track record in leadership, training, and project implementation. My mission is to leverage my skills to mentor others, maintain safety and security, and deliver programs that create tangible impact in my community and beyond.</p>
+                    <p class="about-description">My career is built at the intersection of safety, security, and technology. Whether I'm training vulnerable groups on financial literacy, leading workshops on cybersecurity awareness, or managing projects that empower youth, my core drive is to create environments where people can thrive securely. I believe in practical, hands-on learning that leads to real-world results.</p>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50">0</span>
+                    <span class="stat-text">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="4">0</span>
+                    <span class="stat-text">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-text">Trained Individuals</span>
+                </div>
+            </div>
+            <div class="specialization">
+                <h3>Specialization</h3>
+                <p>Occupational Health & Safety (OHS) & Digitals Skills and Mentoring.</p>
+                <div class="spec-details">
+                    <div class="spec-item">
+                        <h4>Experience Level</h4>
+                        <p>Certified Professional</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Education</h4>
+                        <p>National Diploma, Office Technology & Management.</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Languages</h4>
+                        <p>English (Fluent), Hausa (Fluent), French (Beginner)</p>
+                    </div>
+                </div>
+                <div class="spec-btns">
+                    <a href="#" class="btn-primary">Download Resume</a>
+                    <a href="#contact" class="btn-secondary">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>Skills</h2>
+                <p>Competency</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Occupational Health & Safety</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Practical Implementation</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>PPE</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Safety Management</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Analysis</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Power BI</span>
+                            <span>87%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="87%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>M365</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Web Development/Fin Literacy</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="section-title">
+                <h2>Resume</h2>
+                <p>Professional Summary</p>
+            </div>
+            <div class="resume-content">
+                <div class="resume-col">
+                    <h3>Profile</h3>
+                    <p>Disciplined and results-driven professional with expertise in Occupational Health & Safety, cybersecurity, office management skills, Mentoring, Coaching, financial literacy, and digital skills development.</p>
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Farin Wata Street Jos, Plateau State, Nigeria</p>
+                    <p><i class="fas fa-globe"></i> nazifiadam01.com</p>
+                    <p><i class="fas fa-phone"></i> +234 816 445 4174</p>
+                    <p><i class="fab fa-linkedin"></i> linkedin.com/in/nazifiadam/</p>
+                    <h3>Technical Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Office Suites & OHS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Web Design</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Training & Capacity Building, Mentoring, Financial</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Project Management</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-col">
+                    <h3>Professional Experience</h3>
+                    <div class="experience">
+                        <h4>Instructor</h4>
+                        <span class="date">2020 - Present</span>
+                        <span class="company">AdamsHub</span>
+                        <ul>
+                            <li>Deliver training in digital literacy, data analysis (Power BI, Excel), and cybersecurity awareness to diverse student groups.</li>
+                            <li>Mentor team of 12 developers and establish technical best practices.</li>
+                            <li>Mentor over 500 students, equipping them with practical, market-relevant skills.</li>
+                            <li>Reduce system downtime by 75% through improved architecture and monitoring.</li>
+                        </ul>
+                    </div>
+                    <div class="experience">
+                        <h4>Entrepreneur / Manager</h4>
+                        <span class="date">2018 - Present</span>
+                        <span class="company">AA Jamilu Adam Enterprises.</span>
+                        <ul>
+                            <li>Lead a community-focused enterprise that advances financial education and digital innovation.</li>
+                            <li>Oversee all operations with a strict focus on discipline, accountability, and measurable community impact.</li>
+                        </ul>
+                    </div>
+                    <div class="experience">
+                        <h4>Volunteer</h4>
+                        <span class="date">2023 - Present</span>
+                        <span class="company">Jos Microsoft Community.</span>
+                        <ul>
+                            <li>Design and overseen bootcamp registration.</li>
+                            <li>Facilitation of PowerBI, and Event organizing.</li>
+                        </ul>
+                    </div>
+                    <h3>Education</h3>
+                    <div class="education">
+                        <h4>Higher National Diploma in Office Technology & Management.</h4>
+                        <span class="date">2017 - 2019</span>
+                        <span class="institution">Federal Polytechnic Bauchi</span>
+                        <p>Specialized in office management, Mentoring, safety etc.</p>
+                    </div>
+                    <div class="education">
+                        <h4>Certified Professional in Health & Safety - OSHA UK</h4>
+                        <span class="date">2024</span>
+                        <span class="institution">OSHA Association</span>
+                        <p>United Kingdom.</p>
+                    </div>
+                    <h3>Certifications</h3>
+                    <div class="certification">
+                        <p>Financial Literacy Trainer - GIZ & FUT Minna, AI Fluency - IEO/Microsoft (2023)</p>
+                        <p>Career Essentials in Cybersecurity - Microsoft & LinkedIn, Google Digital Skills for Africa (2024)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <p>My Work</p>
+            </div>
+            <p class="portfolio-description">This portfolio is a curated collection of projects and initiatives where I've applied my unique blend of skills in Occupational Health & Safety, Cybersecurity, Mentoring and Digital Empowerment. Each entry represents a practical application of my expertise, focused on creating secure, knowledgeable, and resilient communities. From data-driven analyses to large-scale training programs, these projects demonstrate my commitment to turning theory into tangible, positive impact.</p>
+            
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="training">Training</button>
+                <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+                <button class="filter-btn" data-filter="web-design">Event</button>
+                <button class="filter-btn" data-filter="youth-empowerment">Youth Empowerment</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="training">
+                    <div class="portfolio-img">
+                        <img src="portfolio1.jpg" alt="Community AI & Data Literacy">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Community AI & Data Literacy</h4>
+                                <p>Empowering Vulnerable Groups</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="data-analysis">
+                    <div class="portfolio-img">
+                        <img src="services2.jpg" alt="Data Analysis">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Data Analysis</h4>
+                                <p>Hospital Dashboard</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="youth-empowerment">
+                    <div class="portfolio-img">
+                        <img src="portfolio3.jpg" alt="Youth Empowerment">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Youth Empowerment</h4>
+                                <p>Workshops</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="Training">
+                    <div class="portfolio-img">
+                        <img src="portfolio4.jpg" alt="Training">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Training</h4>
+                                <p>Capturing Moments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web-design">
+                    <div class="portfolio-img">
+                        <img src="portfolio5.jpg" alt="Web Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Training</h4>
+                                <p>Bootcamp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="training">
+                    <div class="portfolio-img">
+                        <img src="portfolio6.jpg" alt="Facilitation">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Facilitation</h4>
+                                <p>Facilitation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Services</h2>
+                <p>What I Offer</p>
+            </div>
+            <p class="services-description">I offer integrated solutions that combine safety, security, and digital empowerment. From certified training programs to strategic project implementation, I help organizations and communities build resilience and capacity for sustainable development.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>OHS Training</h3>
+                    <p>Deliver certified Occupational Health & Safety training and consultancy to help organizations create safer work environments and comply with international standards.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity Awareness</h3>
+                    <p>Equip teams and communities with the fundamentals of cybersecurity to protect against digital threats and promote responsible data management.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Data Literacy & Analysis</h3>
+                    <p>Provide practical training in Power BI and Excel, turning raw data into actionable insights for business and community development.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Financial Literacy Programs</h3>
+                    <p>Design and deliver training programs that empower individuals and groups with essential knowledge for financial stability and entrepreneurship.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Project Coordination</h3>
+                    <p>Lead and implement community-focused projects from conception to completion, ensuring discipline, accountability, and maximum impact.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Youth Empowerment</h3>
+                    <p>Develop and facilitate capacity-building initiatives focused on equipping youth with digital, soft, and vocational skills for the modern economy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Testimonials</h2>
+                <p>What Clients Say</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-item active">
+                    <p>"Nazifi's training on cybersecurity awareness was eye-opening and immediately applicable. He has a gift for breaking down complex topics."</p>
+                    <div class="testimonial-client">
+                        <h4>Fatimah Yunusa</h4>
+                        <span>Student, ICIN Learning Center</span>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Exceptional service delivery and innovative solutions have transformed our business operations, leading to remarkable growth and enhanced customer satisfaction across all touchpoints."</p>
+                    <div class="testimonial-client">
+                        <h4>Muhammad Adam</h4>
+                        <span>Business Person</span>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Having a practical skills on office suites, this is recommended to anyone in and outside the tech space."</p>
+                    <div class="testimonial-client">
+                        <h4>Emma Aubin</h4>
+                        <span>Digital Lead Sowa Tech</span>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Professional expertise and dedication have significantly improved our project delivery timelines and quality metrics."</p>
+                    <div class="testimonial-client">
+                        <h4>Mary CEO</h4>
+                        <span>Mary Enterprises</span>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Innovative approach to user experience design has significantly enhanced our platform's engagement metrics and customer retention rates."</p>
+                    <div class="testimonial-client">
+                        <h4>John Dauda</h4>
+                        <span>Director Swaee Solution</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Get In Touch</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <p>You can Reach out to Us....</p>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-details">
+                            <h4>Our Location</h4>
+                            <p>Farin Wata Street<br>Jos, Plateau State Nigeria.</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-details">
+                            <h4>Phone Number</h4>
+                            <p>+234 816 445 4174<br>+234 906 779 0422</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-details">
+                            <h4>Email Address</h4>
+                            <p>nazifiadam01@gmail.com<br>adamnazifi@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Get In Touch</h3>
+                    <p>Kindly reach out to us via.</p>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                        <div id="form-message" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; Copyright <strong>NazPortfolio</strong>. All Rights Reserved</p>
+                <p>Designed by nazifiadam</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
