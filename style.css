@@ -25,6 +25,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
@@ -241,6 +242,7 @@ img {
     padding: 150px 0 100px;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     text-align: center;
+    transition: var(--transition);
 }
 
 .hero-container {
@@ -295,6 +297,7 @@ img {
 .about {
     padding: 100px 0;
     background-color: white;
+    transition: var(--transition);
 }
 
 .about-content {
@@ -314,6 +317,7 @@ img {
     font-size: 28px;
     color: var(--secondary-color);
     margin-bottom: 10px;
+    transition: var(--transition);
 }
 
 .about-role {
@@ -383,6 +387,7 @@ img {
     background-color: #f8f9fa;
     padding: 40px;
     border-radius: 10px;
+    transition: var(--transition);
 }
 
 .specialization h3 {
@@ -417,6 +422,7 @@ img {
 .skills {
     padding: 100px 0;
     background-color: #f8f9fa;
+    transition: var(--transition);
 }
 
 .skills-container {
@@ -433,6 +439,7 @@ img {
     font-size: 22px;
     color: var(--secondary-color);
     margin-bottom: 20px;
+    transition: var(--transition);
 }
 
 .skill-item {
@@ -450,6 +457,7 @@ img {
     background-color: #e9ecef;
     border-radius: 5px;
     overflow: hidden;
+    transition: var(--transition);
 }
 
 .skill-progress {
@@ -464,6 +472,7 @@ img {
 .resume {
     padding: 100px 0;
     background-color: white;
+    transition: var(--transition);
 }
 
 .resume-content {
@@ -478,6 +487,7 @@ img {
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid #f1f1f1;
+    transition: var(--transition);
 }
 
 .resume-col p {
@@ -493,6 +503,7 @@ img {
     font-size: 18px;
     color: var(--dark-color);
     margin-bottom: 5px;
+    transition: var(--transition);
 }
 
 .date {
@@ -503,6 +514,7 @@ img {
     border-radius: 15px;
     font-size: 14px;
     margin-bottom: 10px;
+    transition: var(--transition);
 }
 
 .company, .institution {
@@ -525,6 +537,7 @@ img {
 .portfolio {
     padding: 100px 0;
     background-color: #f8f9fa;
+    transition: var(--transition);
 }
 
 .portfolio-description {
@@ -569,6 +582,7 @@ img {
     overflow: hidden;
     position: relative;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
 }
 
 .portfolio-img {
@@ -626,6 +640,7 @@ img {
 .services {
     padding: 100px 0;
     background-color: white;
+    transition: var(--transition);
 }
 
 .services-description {
@@ -683,6 +698,7 @@ img {
 .testimonials {
     padding: 100px 0;
     background-color: #f8f9fa;
+    transition: var(--transition);
 }
 
 .testimonials-slider {
@@ -699,6 +715,7 @@ img {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     display: none;
+    transition: var(--transition);
 }
 
 .testimonial-item.active {
@@ -753,6 +770,7 @@ img {
 .contact {
     padding: 100px 0;
     background-color: white;
+    transition: var(--transition);
 }
 
 .contact-content {
@@ -765,6 +783,7 @@ img {
     font-size: 24px;
     color: var(--secondary-color);
     margin-bottom: 15px;
+    transition: var(--transition);
 }
 
 .contact-info > p, .contact-form > p {
@@ -788,12 +807,14 @@ img {
     justify-content: center;
     margin-right: 15px;
     font-size: 18px;
+    transition: var(--transition);
 }
 
 .info-details h4 {
     font-size: 18px;
     color: var(--secondary-color);
     margin-bottom: 5px;
+    transition: var(--transition);
 }
 
 .info-details p {
@@ -845,6 +866,7 @@ footer {
     color: white;
     padding: 30px 0;
     text-align: center;
+    transition: var(--transition);
 }
 
 .footer-content {
@@ -964,75 +986,27 @@ footer {
         padding: 20px;
     }
 }
-/* Dark Mode Styles */
+
+/* ===== DARK MODE STYLES ===== */
+/* Add this section at the end of your CSS file */
+
+/* Dark Mode Variables */
 body.dark-mode {
     --primary-color: #4da6ff;
-    --secondary-color: #a0c5e6;
+    --secondary-color: #cce4ff;
     --accent-color: #ff6b6b;
-    --light-color: #1a1a2e;
-    --dark-color: #e6e6e6;
-    --text-color: #e6e6e6;
-    --text-light: #a0a0a0;
-    background-color: #121212;
-    color: #e6e6e6;
+    --light-color: #000000;  /* Changed from grey to black */
+    --dark-color: #ffffff;
+    --text-color: #ffffff;
+    --text-light: #b0b0b0;
+    background-color: #000000;  /* Pure black background */
+    color: #ffffff;
 }
 
-body.dark-mode .navbar {
-    background-color: rgba(26, 26, 46, 0.95);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-body.dark-mode .nav-link {
-    color: #e6e6e6;
-}
-
-body.dark-mode .hero {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-}
-
-body.dark-mode .stat-item,
-body.dark-mode .specialization,
-body.dark-mode .service-card,
-body.dark-mode .testimonial-item,
-body.dark-mode .form-group input,
-body.dark-mode .form-group textarea {
-    background-color: #1e1e2e;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-body.dark-mode .skill-bar {
-    background-color: #2d2d3a;
-}
-
-body.dark-mode .portfolio-item,
-body.dark-mode .filter-btn {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-body.dark-mode .filter-btn {
-    background-color: #1e1e2e;
-    border: 1px solid #333;
-    color: #e6e6e6;
-}
-
-body.dark-mode .filter-btn.active, 
-body.dark-mode .filter-btn:hover {
-    background-color: var(--primary-color);
-    color: #121212;
-}
-
-body.dark-mode .portfolio-overlay {
-    background-color: rgba(77, 166, 255, 0.9);
-}
-
-body.dark-mode footer {
-    background-color: #0d0d15;
-}
-
-/* Dark Mode Toggle Button */
+/* Dark Mode Toggle Button - Top Right */
 .dark-mode-toggle {
     position: fixed;
-    bottom: 20px;
+    top: 20px;
     right: 20px;
     width: 50px;
     height: 50px;
@@ -1044,13 +1018,14 @@ body.dark-mode footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 999;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
 
 .dark-mode-toggle:hover {
     transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
 .toggle-icon {
@@ -1085,16 +1060,492 @@ body.dark-mode .toggle-icon .fa-moon {
     opacity: 0;
 }
 
-/* Smooth transitions for dark mode */
-body, .navbar, .hero, .stat-item, .specialization, 
-.service-card, .testimonial-item, .portfolio-item,
-.filter-btn, footer 
-{
-    transition: background-color 0.3s ease, color 0.3s ease, 
-                border-color 0.3s ease, box-shadow 0.3s ease;
+/* Dark Mode Component Styles */
+body.dark-mode .navbar {
+    background-color: rgba(0, 0, 0, 0.95);  /* Black with transparency */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #333;
 }
 
-.form-group input, .form-group textarea, .skill-bar 
-{
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+body.dark-mode .nav-link {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-link:hover {
+    color: var(--primary-color);
+}
+
+body.dark-mode .dropdown-menu,
+body.dark-mode .deep-dropdown-menu {
+    background-color: #0a0a0a;  /* Near black */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .dropdown-menu a,
+body.dark-mode .deep-dropdown-menu a {
+    color: #ffffff;
+}
+
+body.dark-mode .dropdown-menu a:hover,
+body.dark-mode .deep-dropdown-menu a:hover {
+    background-color: #1a1a1a;  /* Dark charcoal */
+    color: var(--primary-color);
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);  /* Black gradient */
+}
+
+body.dark-mode .about {
+    background-color: #000000;  /* Pure black */
+}
+
+body.dark-mode .stat-item,
+body.dark-mode .specialization,
+body.dark-mode .service-card,
+body.dark-mode .testimonial-item {
+    background-color: #0a0a0a;  /* Near black */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid #333;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background-color: #0a0a0a;  /* Near black */
+    border: 1px solid #333;
+    color: #ffffff;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(77, 166, 255, 0.2);
+}
+
+body.dark-mode .skill-bar {
+    background-color: #1a1a1a;  /* Dark charcoal */
+}
+
+body.dark-mode .portfolio-item {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid #333;
+}
+
+body.dark-mode .filter-btn {
+    background-color: #0a0a0a;  /* Near black */
+    border: 1px solid #333;
+    color: #ffffff;
+}
+
+body.dark-mode .filter-btn.active, 
+body.dark-mode .filter-btn:hover {
+    background-color: var(--primary-color);
+    color: #000000;
+    border-color: var(--primary-color);
+}
+
+body.dark-mode .portfolio-overlay {
+    background-color: rgba(77, 166, 255, 0.9);
+}
+
+body.dark-mode footer {
+    background-color: #000000;  /* Pure black */
+    border-top: 1px solid #333;
+}
+
+/* Text and heading colors in dark mode */
+body.dark-mode .section-title h2 {
+    color: var(--secondary-color);
+}
+
+body.dark-mode .section-title p {
+    color: var(--text-light);
+}
+
+body.dark-mode .about-info h3 {
+    color: var(--secondary-color);
+}
+
+body.dark-mode .resume-col h3 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid #333;
+}
+
+body.dark-mode .experience h4,
+body.dark-mode .education h4 {
+    color: var(--dark-color);
+}
+
+body.dark-mode .date {
+    background-color: #1a1a1a;  /* Dark charcoal */
+    color: var(--primary-color);
+}
+
+body.dark-mode .company,
+body.dark-mode .institution {
+    color: var(--text-light);
+}
+
+/* Section backgrounds in dark mode */
+body.dark-mode .skills {
+    background-color: #000000;  /* Pure black */
+}
+
+body.dark-mode .portfolio {
+    background-color: #000000;  /* Pure black */
+}
+
+body.dark-mode .testimonials {
+    background-color: #000000;  /* Pure black */
+}
+
+body.dark-mode .services {
+    background-color: #000000;  /* Pure black */
+}
+
+body.dark-mode .resume {
+    background-color: #000000;  /* Pure black */
+}
+
+body.dark-mode .contact {
+    background-color: #000000;  /* Pure black */
+}
+
+/* Other dark mode elements */
+body.dark-mode .dot {
+    background-color: #333;
+}
+
+body.dark-mode .dot.active, 
+body.dark-mode .dot:hover {
+    background-color: var(--primary-color);
+}
+
+body.dark-mode .contact-info h3,
+body.dark-mode .contact-form h3 {
+    color: var(--secondary-color);
+}
+
+body.dark-mode .info-icon {
+    background-color: #1a1a1a;  /* Dark charcoal */
+    color: var(--primary-color);
+}
+
+body.dark-mode .info-details h4 {
+    color: var(--secondary-color);
+}
+
+body.dark-mode .info-details p {
+    color: var(--text-light);
+}
+
+/* Mobile responsive adjustments for dark mode toggle */
+@media (max-width: 768px) {
+    .dark-mode-toggle {
+        top: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    body.dark-mode .nav-menu {
+        background-color: #0a0a0a;
+    }
+}
+
+@media (max-width: 576px) {
+    .dark-mode-toggle {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .toggle-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+/* ===== DARK MODE STYLES ===== */
+/* Add this section at the end of your CSS file */
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --primary-color: #4da6ff;
+    --secondary-color: #cce4ff;
+    --accent-color: #ff6b6b;
+    --light-color: #000000;
+    --dark-color: #ffffff;
+    --text-color: #ffffff;
+    --text-light: #b0b0b0;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Dark Mode Toggle Button - Smaller and Lower */
+.dark-mode-toggle {
+    position: fixed;
+    top: 80px; /* Lower position */
+    right: 20px;
+    width: 40px; /* Smaller */
+    height: 40px; /* Smaller */
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-icon {
+    position: relative;
+    width: 18px; /* Smaller */
+    height: 18px; /* Smaller */
+}
+
+.toggle-icon .fa-sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 16px; /* Smaller icon */
+}
+
+.toggle-icon .fa-moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    font-size: 16px; /* Smaller icon */
+}
+
+body.dark-mode .toggle-icon .fa-sun {
+    opacity: 1;
+}
+
+body.dark-mode .toggle-icon .fa-moon {
+    opacity: 0;
+}
+
+/* Rest of your dark mode styles remain the same */
+body.dark-mode .navbar {
+    background-color: rgba(0, 0, 0, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .nav-link {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-link:hover {
+    color: var(--primary-color);
+}
+
+body.dark-mode .dropdown-menu,
+body.dark-mode .deep-dropdown-menu {
+    background-color: #0a0a0a;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .dropdown-menu a,
+body.dark-mode .deep-dropdown-menu a {
+    color: #ffffff;
+}
+
+body.dark-mode .dropdown-menu a:hover,
+body.dark-mode .deep-dropdown-menu a:hover {
+    background-color: #1a1a1a;
+    color: var(--primary-color);
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+}
+
+body.dark-mode .about {
+    background-color: #000000;
+}
+
+body.dark-mode .stat-item,
+body.dark-mode .specialization,
+body.dark-mode .service-card,
+body.dark-mode .testimonial-item {
+    background-color: #0a0a0a;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid #333;
+}
+
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background-color: #0a0a0a;
+    border: 1px solid #333;
+    color: #ffffff;
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(77, 166, 255, 0.2);
+}
+
+body.dark-mode .skill-bar {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .portfolio-item {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid #333;
+}
+
+body.dark-mode .filter-btn {
+    background-color: #0a0a0a;
+    border: 1px solid #333;
+    color: #ffffff;
+}
+
+body.dark-mode .filter-btn.active, 
+body.dark-mode .filter-btn:hover {
+    background-color: var(--primary-color);
+    color: #000000;
+    border-color: var(--primary-color);
+}
+
+body.dark-mode .portfolio-overlay {
+    background-color: rgba(77, 166, 255, 0.9);
+}
+
+body.dark-mode footer {
+    background-color: #000000;
+    border-top: 1px solid #333;
+}
+
+body.dark-mode .section-title h2 {
+    color: var(--secondary-color);
+}
+
+body.dark-mode .section-title p {
+    color: var(--text-light);
+}
+
+body.dark-mode .about-info h3 {
+    color: var(--secondary-color);
+}
+
+body.dark-mode .resume-col h3 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid #333;
+}
+
+body.dark-mode .experience h4,
+body.dark-mode .education h4 {
+    color: var(--dark-color);
+}
+
+body.dark-mode .date {
+    background-color: #1a1a1a;
+    color: var(--primary-color);
+}
+
+body.dark-mode .company,
+body.dark-mode .institution {
+    color: var(--text-light);
+}
+
+body.dark-mode .skills {
+    background-color: #000000;
+}
+
+body.dark-mode .portfolio {
+    background-color: #000000;
+}
+
+body.dark-mode .testimonials {
+    background-color: #000000;
+}
+
+body.dark-mode .services {
+    background-color: #000000;
+}
+
+body.dark-mode .resume {
+    background-color: #000000;
+}
+
+body.dark-mode .contact {
+    background-color: #000000;
+}
+
+body.dark-mode .dot {
+    background-color: #333;
+}
+
+body.dark-mode .dot.active, 
+body.dark-mode .dot:hover {
+    background-color: var(--primary-color);
+}
+
+body.dark-mode .contact-info h3,
+body.dark-mode .contact-form h3 {
+    color: var(--secondary-color);
+}
+
+body.dark-mode .info-icon {
+    background-color: #1a1a1a;
+    color: var(--primary-color);
+}
+
+body.dark-mode .info-details h4 {
+    color: var(--secondary-color);
+}
+
+body.dark-mode .info-details p {
+    color: var(--text-light);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .dark-mode-toggle {
+        top: 70px; /* Adjusted for mobile */
+        right: 15px;
+        width: 36px; /* Even smaller on mobile */
+        height: 36px;
+    }
+    
+    body.dark-mode .nav-menu {
+        background-color: #0a0a0a;
+    }
+}
+
+@media (max-width: 576px) {
+    .dark-mode-toggle {
+        top: 65px; /* Adjusted for small mobile */
+        right: 10px;
+        width: 32px; /* Smallest size */
+        height: 32px;
+    }
+    
+    .toggle-icon {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .toggle-icon .fa-sun,
+    .toggle-icon .fa-moon {
+        font-size: 14px;
+    }
 }
