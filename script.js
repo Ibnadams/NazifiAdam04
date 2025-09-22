@@ -261,6 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
 // Dark Mode Functionality
 const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.body;
@@ -281,12 +282,3 @@ darkModeToggle.addEventListener('click', () => {
         localStorage.setItem('darkMode', 'disabled');
     }
 });
-
-// Optional: Add system preference detection
-const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
-// If no user preference saved, use system preference
-if (!localStorage.getItem('darkMode') && prefersDarkScheme.matches) {
-    body.classList.add('dark-mode');
-    localStorage.setItem('darkMode', 'enabled');
-}
