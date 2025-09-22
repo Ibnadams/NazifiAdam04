@@ -1516,7 +1516,30 @@ body.dark-mode .info-details h4 {
 body.dark-mode .info-details p {
     color: var(--text-light);
 }
+/* Fix for contact section icons in dark mode */
+body.dark-mode .about-details i,
+body.dark-mode .about-details p,
+body.dark-mode .info-icon,
+body.dark-mode .info-details h4,
+body.dark-mode .info-details p {
+    color: #ffffff !important;
+}
 
+body.dark-mode .about-details i {
+    color: var(--primary-color) !important;
+}
+
+body.dark-mode .info-icon {
+    background-color: var(--primary-color) !important;
+    color: #000000 !important;
+}
+
+body.dark-mode .contact-info h3,
+body.dark-mode .contact-form h3,
+body.dark-mode .contact-info > p,
+body.dark-mode .contact-form > p {
+    color: #ffffff !important;
+}
 /* Mobile adjustments */
 @media (max-width: 768px) {
     .dark-mode-toggle {
@@ -1549,3 +1572,4 @@ body.dark-mode .info-details p {
         font-size: 14px;
     }
 }
+
